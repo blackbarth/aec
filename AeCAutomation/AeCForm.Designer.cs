@@ -59,7 +59,7 @@
             this.dataGridView.Size = new System.Drawing.Size(775, 383);
             this.dataGridView.TabIndex = 2;
             // 
-            // Form1
+            // AeCForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -67,8 +67,9 @@
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "AeCForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AeC Automação";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

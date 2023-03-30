@@ -46,7 +46,7 @@ namespace AeCAutomation.Services
 
         public void Salvar(Busca busca)
         {
-      
+
             if (!Existe(busca))
             {
                 repository.Salvar(busca);
@@ -89,8 +89,8 @@ namespace AeCAutomation.Services
                 foreach (var result in searchResults)
                 {
                     string titulo = result.FindElement(By.ClassName("tres-linhas")).Text; // Altere o seletor de acordo com o elemento de título do resultado
-                    string area = result.FindElement(By.ClassName("hat")).Text; 
-                    string entrada = result.FindElement(By.TagName("small")).Text; 
+                    string area = result.FindElement(By.ClassName("hat")).Text;
+                    string entrada = result.FindElement(By.TagName("small")).Text;
                     string autor = "";
                     string data = "";
                     string pattern = @"Publicado por (\w+(\s\w+)*) em (\d{2}\/\d{2}\/\d{4})";
@@ -104,11 +104,7 @@ namespace AeCAutomation.Services
                         data = match.Groups[3].Value;
                     }
 
-
-
-
                     string descricao = result.FindElement(By.ClassName("duas-linhas")).Text; // Altere o seletor de acordo com o elemento de URL do resultado
-
 
                     var registro = new Busca
                     {
